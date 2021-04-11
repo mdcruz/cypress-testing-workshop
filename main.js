@@ -1,12 +1,6 @@
 import 'reveal.js/dist/reset.css'
 import 'reveal.js/dist/reveal.css'
 import 'reveal.js/dist/theme/league.css'
-
-// pick code block syntax highlighting theme
-// included with Reveal.js are monokai and zenburn
-// import 'reveal.js/plugin/highlight/monokai.css'
-// more themes from Highlight.js
-// import 'highlight.js/styles/purebasic.css'
 import 'highlight.js/styles/docco.css'
 
 import Reveal from 'reveal.js'
@@ -36,7 +30,7 @@ const getBaseName = (relativeUrl) => {
 // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
 const url = new URL(document.URL)
 const slidesFolder = url.searchParams.get('p') || 'intro'
-const toLoad = slidesFolder + '/PITCHME.md'
+const toLoad = slidesFolder + '/slides.md'
 const markdownFilename = './' + (PROD ? toLoad : 'slides/' + toLoad)
 
 const markdownFileBase = getBaseName(markdownFilename)

@@ -9,13 +9,14 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "start": "npm start --prefix todomvc -- --quiet",
-    "start:react": "http-server --silent -p 3000 -c-1 todomvc-react",
     "ci": "start-test 3000",
     "dev": "start-test 3000 cy:open",
     "postinstall": "cd todomvc && npm install",
     "reset": "npm run reset --prefix todomvc",
     "format": "eslint --fix 'cypress/**/*.js'",
-    "lint": "eslint 'cypress/**/*.js'"
+    "lint": "eslint 'cypress/**/*.js'",
+    "slides:dev": "vite",
+    "slides:build": "vite build"
   },
   "keywords": [],
   "author": "Marie Drake",
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-cypress": "2.11.2",
     "eslint-plugin-prettier": "3.1.2",
+    "highlight.js": "10.7.2",
     "http-server": "0.12.0",
     "mocha": "6.2.2",
     "mocha-junit-reporter": "1.23.3",
@@ -34,7 +36,9 @@
     "mochawesome-merge": "1.0.7",
     "mochawesome-report-generator": "4.0.1",
     "prettier": "2.2.1",
-    "start-server-and-test": "1.12.1"
+    "reveal.js": "4.1.0",
+    "start-server-and-test": "1.12.1",
+    "vite": "2.1.5"
   },
   "engines": {
     "node": ">=12"

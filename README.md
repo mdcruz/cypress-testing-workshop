@@ -59,3 +59,17 @@ Open another terminal window and then type
 ```bash
 npm run cy:open
 ```
+
+## Viewing the slides locally
+
+If you want to view the slides locally, open another terminal window and then type
+
+```bash
+npm run slides:build
+npm run slides:dev
+```
+
+## Workshop Credits
+
+- [Cypress Testing Workshop](https://github.com/cypress-io/testing-workshop-cypress)
+- [Gleb Bahmutov](https://twitter.com/bahmutov)
