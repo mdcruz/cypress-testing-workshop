@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 // @ts-check
 it('loads', () => {
-  cy.visit('localhost:3000')
+  cy.visit('localhost:3001')
 
   // passing assertions
   // https://on.cypress.io/get

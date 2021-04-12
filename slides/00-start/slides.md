@@ -185,3 +185,9 @@ Students should know where to find information later on. Main resources is the a
 
 - use IntelliSense
 - use Cypress Docs [https://docs.cypress.io/](https://docs.cypress.io/)
+
++++
+
+## Let's jump to writing our first test
+
+Jump to: [01-basic](?p=01-basic)
