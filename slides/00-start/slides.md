@@ -87,7 +87,7 @@ Type into the `spec.js`
 
 ```javascript
 it('loads', () => {
-  cy.visit('localhost:3000')
+  cy.visit('localhost:3001')
 })
 ```
 
@@ -116,7 +116,7 @@ it('loads', () => {
 ```javascript
 /// <reference types="cypress" />
 it('loads', () => {
-  cy.visit('localhost:3000')
+  cy.visit('localhost:3001')
 })
 ```
 
@@ -145,7 +145,7 @@ Using `ts-check`
 /// <reference types="cypress" />
 // @ts-check
 it('loads', () => {
-  cy.visit('localhost:3000')
+  cy.visit('localhost:3001')
 })
 ```
 
@@ -188,6 +188,6 @@ Students should know where to find information later on. Main resources is the a
 
 +++
 
-## Let's jump to writing our first test
+## Let's jump to exploring basic Cypress commands
 
 Jump to: [01-basic](?p=01-basic)

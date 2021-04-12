@@ -46,10 +46,10 @@ and you should see in the terminal
   Done
 
   Resources
-  http://localhost:3000/todos
+  http://localhost:3001/todos
 
   Home
-  http://localhost:3000
+  http://localhost:3001
 ```
 
 ## Starting the Cypress Test Runner

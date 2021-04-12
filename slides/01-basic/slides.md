@@ -2,7 +2,7 @@
 
 ### 📚 You will learn
 
-- basic commands
+- basic commands (let's start with cy.contains first!)
 - two ways to run Cypress
 - screenshots and video recording
 
@@ -15,7 +15,7 @@
 ```js
 /// <reference types="cypress" />
 it('loads', () => {
-  cy.visit('localhost:3000')
+  cy.visit('localhost:3001')
   cy.contains('h1', 'Todos App')
 })
 ```
@@ -87,3 +87,8 @@ Have you noticed that when Cypress runs headlessly, screenshots and videos are a
 - most commands retry
 - run Cypress in headless mode on CI with `cypress run`
 - screenshots and videos
+
++++
+## Let's jump to adding some items to our Todo app!
+
+Jump to: [02-adding-items](?p=02-adding-items)

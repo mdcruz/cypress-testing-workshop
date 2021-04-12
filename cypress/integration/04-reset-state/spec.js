@@ -10,7 +10,7 @@ const addItem = (text) => {
 describe('reset data using XHR call', () => {
   beforeEach(() => {
     // application should be running at port 3000
-    // and the "localhost:3000" is set as "baseUrl" in "cypress.json"
+    // and the "localhost:3001" is set as "baseUrl" in "cypress.json"
     // TODO call /reset endpoint with POST method and object {todos: []}
     cy.visit('/')
   })

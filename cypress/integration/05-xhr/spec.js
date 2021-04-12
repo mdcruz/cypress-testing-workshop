@@ -2,7 +2,7 @@
 //
 // note, we are not resetting the server before each test
 // and we want to confirm that IF the application has items already
-// (for example add them manually using the browser localhost:3000)
+// (for example add them manually using the browser localhost:3001)
 // then these tests fail!
 //
 // see https://on.cypress.io/intercept

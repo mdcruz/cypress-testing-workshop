@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 
 beforeEach(() => {
-  // application should be running at port 3000
-  // and the "localhost:3000" is set as "baseUrl" in "cypress.json"
+  // application should be running at port 3001
+  // and the "localhost:3001" is set as "baseUrl" in "cypress.json"
   cy.visit('/')
 })
 it('loads', () => {
