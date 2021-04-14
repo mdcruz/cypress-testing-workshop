@@ -25,6 +25,35 @@ describe('reset data using XHR call', () => {
   })
 })
 
+describe('set initial data', () => {
+  it('sets data to complex object right away', () => {
+    cy.request('POST', '/reset', {
+      todos: [
+        {
+          id: '123456abc',
+          completed: true,
+          title: 'reset data before test'
+        }
+      ]
+    })
+
+    cy.visit('/')
+    // check what is rendered
+    cy.get('li.todo').should('have.length', 1)
+  })
+
+  it('sets data using fixture', () => {
+    cy.fixture('two-items').then((todos) => {
+      // "todos" is an array
+      cy.request('POST', '/reset', { todos })
+    })
+
+    cy.visit('/')
+    // check what is rendered
+    cy.get('li.todo').should('have.length', 2)
+  })
+})
+
 describe('reset data using cy.writeFile', () => {
   beforeEach(() => {
     const emptyTodos = {
@@ -44,45 +73,15 @@ describe('reset data using cy.writeFile', () => {
   })
 })
 
-describe('reset data using a task', () => {
+describe('reset data using cy.exec', () => {
   beforeEach(() => {
-    cy.task('resetData')
+    cy.exec('npm run reset')
     cy.visit('/')
-    cy.get('li.todo').should('have.length', 0)
   })
 
   it('adds two items', () => {
     addItem('first item')
     addItem('second item')
-    cy.get('li.todo').should('have.length', 2)
-  })
-})
-
-describe('set initial data', () => {
-  it('sets data to complex object right away', () => {
-    cy.task('resetData', {
-      todos: [
-        {
-          id: '123456abc',
-          completed: true,
-          title: 'reset data before test'
-        }
-      ]
-    })
-
-    cy.visit('/')
-    // check what is rendered
-    cy.get('li.todo').should('have.length', 1)
-  })
-
-  it('sets data using fixture', () => {
-    cy.fixture('two-items').then((todos) => {
-      // "todos" is an array
-      cy.task('resetData', { todos })
-    })
-
-    cy.visit('/')
-    // check what is rendered
     cy.get('li.todo').should('have.length', 2)
   })
 })

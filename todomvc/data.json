@@ -1,34 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "test",
-      "completed": false,
-      "id": "4129918805"
-    },
-    {
-      "title": "another",
-      "completed": false,
-      "id": "4112338255"
-    },
-    {
-      "title": "test2",
-      "completed": false,
-      "id": "2185977216"
-    },
-    {
-      "title": "test3",
-      "completed": false,
-      "id": "1084671906"
-    },
-    {
-      "title": "test2",
-      "completed": false,
-      "id": "8805633257"
-    },
-    {
-      "title": "test3",
-      "completed": false,
-      "id": "6645518830"
-    }
-  ]
+  "todos": []
 }
