@@ -139,9 +139,14 @@ describe('reset data using cy.exec', () => {
 
 +++
 
-## Best practices
+## 🏁 Best practices
 
 - reset state before each test
   - in our [Best practices guide](https://on.cypress.io/best-practices)
   - use [`cy.request`](https://on.cypress.io/request), [`cy.writeFile`](https://on.cypress.io/writeFile), [`cy.exec`](https://on.cypress.io/exec)
   - you can also use [`cy.task`](https://on.cypress.io/task)
+
++++
+## Let's jump to spying some network calls
+
+Jump to: [05-xhr](?p=05-xhr)
