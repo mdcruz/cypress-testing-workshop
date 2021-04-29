@@ -5,6 +5,7 @@ An example repo containing a Todo application and exercise files to get started 
 ## Requirements
 
 - Any computer: Mac, Windows, Linux
+- Text Editor or IDE of choice (preferably [VS Code](https://code.visualstudio.com/download))
 - [Node 12.0.0+ (LTS)](https://nodejs.org/)
 - [git](https://git-scm.com)
 - [CircleCI account](https://circleci.com/)
