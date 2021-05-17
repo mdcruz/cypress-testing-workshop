@@ -39,16 +39,16 @@ https://github.com/mdcruz/cypress-testing-workshop
 - Cypress Dashboard
 - Test Reporters in Cypress
 - Cypress Configurations
-- Cypress Assertions
-- Custom Commands
-- Component Test Runner
+- Cypress Custom Commands
+- Cypress Fixtures
+- E2E Code Coverage Report
 
 +++
 
 ## Time 🕰
 
-- Day 1 (4 hours)
-- Day 2 (4 hours)
+- Day 1 (4-5 hours)
+- Day 2 (4-5 hours)
 - With breaks of course!
 
 +++
