@@ -286,7 +286,7 @@ workflows:
           executor: cypress/base-12-14-0
           start: npm start
           wait-on: 'http://localhost:3001'
-          spec: 'cypress/integration/07-ci/*'
+          spec: 'cypress/integration/06-ci/*'
           no-workspace: true # since we don't need the workspace after this job
 
       # run tests on Firefox browser
@@ -296,5 +296,5 @@ workflows:
           browser: firefox
           start: npm start
           wait-on: 'http://localhost:3001'
-          spec: 'cypress/integration/07-ci/*'
+          spec: 'cypress/integration/06-ci/*'
           no-workspace: true # since we don't need the workspace after this job

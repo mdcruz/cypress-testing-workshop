@@ -200,3 +200,9 @@ it('shows loading element', () => {
 
 - explore the API calls your app makes
 - stub random data to test various scenarios easily
+
++++
+
+## Let's jump to running our tests on a CI pipeline
+
+Jump to: [06-ci](?p=06-ci)

@@ -83,7 +83,7 @@ module.exports = (on, config) => {
 
   // code coverage tasks
   // @see https://on.cypress.io/code-coverage
-  // on('task', require('@cypress/code-coverage/task'))
+  require('@cypress/code-coverage/task')(on, config)
   // use .babelrc file if want to instrument unit tests
   // on('file:preprocessor', require('@cypress/code-coverage/use-babelrc'))
 
@@ -93,10 +93,3 @@ module.exports = (on, config) => {
   config.modifyObstructiveCode = false
   return Promise.resolve(config)
 }
-
-// init for cypress-plugin-snapshots
-// const snapshotsPlugin = require('cypress-plugin-snapshots/plugin')
-// module.exports = (on, config) => {
-//   snapshotsPlugin.initPlugin(on, config)
-//   return config
-// }
