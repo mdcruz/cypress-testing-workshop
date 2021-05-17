@@ -72,5 +72,7 @@ npm run slides:dev
 
 ## Workshop Credits
 
+Huge thanks to the Cypress team especially the code contributors for creating a workshop template 🎉
+
 - [Cypress Testing Workshop](https://github.com/cypress-io/testing-workshop-cypress)
 - [Gleb Bahmutov](https://twitter.com/bahmutov)
