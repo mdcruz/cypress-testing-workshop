@@ -6,7 +6,7 @@ cypress/screenshots
 cypress/results
 reports/
 mochawesome-report/
-mochawesome.json
+report.json
 cypress/logs
 dist
 .nyc_output

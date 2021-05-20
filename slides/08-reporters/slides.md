@@ -84,7 +84,6 @@ npm i -D mocha mochawesome \
 {
   "reporter": "mochawesome",
   "reporterOptions": {
-    "reportDir": "cypress/results",
     "overwrite": false,
     "html": false,
     "json": true
@@ -93,21 +92,20 @@ npm i -D mocha mochawesome \
 ```
 
 Note:
-This should produce files in `cypress/results` like `mochawesome.json`, `mochawesome_001.json`, `mochawesome_002.json`. Then we need to merge them into a single JSON.
+This should produce files in `mochawesome-report` like `mochawesome.json`, `mochawesome_001.json`, `mochawesome_002.json`. Then we need to merge them into a single JSON.
 
 +++
 
 ## Merge and generate HTML report
 
 ```sh
-$(npm bin)/mochawesome-merge --reportDir cypress/results/*.json > combined-report.json
-$(npm bin)/marge combined-report.json
+npx mochawesome-merge ./mochawesome-report/*.json > report.json
+npx marge report.json
 ```
 
-Uses [https://github.com/adamgruber/mochawesome-report-generator](https://github.com/adamgruber/mochawesome-report-generator) - aka `marge`
+Uses [https://github.com/adamgruber/mochawesome-report-generator](https://github.com/adamgruber/mochawesome-report-generator) - aka `marge`.
 
-Note:
-`$(npm bin)/marge` is the bin alias of `mochawesome-report-generator` package. This should save beautiful report `mochawesome-report/mochawesome.html`.
+This should save beautiful report `mochawesome-report/report.html`.
 
 +++
 
@@ -149,7 +147,7 @@ module.exports = (on, config) => {
 +++
 
 ## Todo
-- Set up cypress-mochawesome-reporter after running the command `npm test` or `npm run ci`.
+- Set up cypress-mochawesome-reporter then run tests using `npm test` or `npm run ci`.
 - Have a failing test and look at the generated report after
 
 +++
