@@ -5,6 +5,7 @@ https://github.com/mdcruz/cypress-testing-workshop
 +++
 
 ## Marie Drake 👋🏼
+
 - Quality Engineering Manager @ Zoopla
 - Previously, Principal Test Automation Engineer @ News UK
 - [@mcruzdrake](https://twitter.com/mcruzdrake)
@@ -20,7 +21,7 @@ https://github.com/mdcruz/cypress-testing-workshop
 
 +++
 
-## Structure (Day 1)
+## Structure (Beginner)
 
 - Introduction to Cypress
 - Overview of Todo app
@@ -28,13 +29,16 @@ https://github.com/mdcruz/cypress-testing-workshop
 - Writing some basic tests
 - Selector Playground
 - Cypress Studio
-- Tips on making tests reliable
-- Control network calls
+- Tips on making tests reliable (+ intro to fixtures)
+- Control network calls (+ intro to aliases)
+- Wrap up 🎉
 
 +++
 
-## Structure (Day 2)
+## Structure (Intermediate)
 
+- Tips on making tests reliable
+- Control network calls
 - Setting up Cypress in CI/CD pipeline
 - Cypress Dashboard
 - Test Reporters in Cypress
@@ -42,6 +46,7 @@ https://github.com/mdcruz/cypress-testing-workshop
 - Cypress Custom Commands
 - Cypress Fixtures
 - E2E Code Coverage Report
+- Wrap up 🎉
 
 +++
 
@@ -96,7 +101,8 @@ Source: [Dominic Elm](https://twitter.com/elmd_)
 
 ## Repo organization
 
-- `/todomvc` is a web application we are going to test
+- `/todomvc` is a web application we are going to test (beginner and intermediate)
+- `/todomvc-redux` for E2E code coverage (intermediate)
 - all tests are in `cypress/integration` folder
   - there are subfolders for exercises
     - `01-basic`
@@ -139,9 +145,9 @@ It is a regular TodoMVC application.
 Note:
 The learners should open DevTools and look at XHR requests that go between the web application and the server. Also the students should find `todomvc/data.json` file with saved items.
 
-+++ 
++++
 
 ## Let's start the workshop exercises!
 
-Jump to: [00-start](?p=00-start)
-
+- Jump to: [00-start](?p=00-start) - for beginner
+- Jump to [04-reset-state](?p=04-reset-state) - for intermediate
