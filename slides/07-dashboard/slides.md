@@ -30,9 +30,12 @@
 
 ## Todo
 
+- create a free account [Cypress Dashboard](https://dashboard.cypress.io/)
+- setup a new project in Cypress Dashboard
 - extend work in `06-ci` folder
 - open Cypress test runner in interactive mode
-- click "Runs / Set up project to record" or "Runs / Login to Dashboard"
+
++++
 
 ![Set up project to record](./images/set-up-project-to-record.png)
 
@@ -42,9 +45,31 @@
 
 +++
 
+## Project ID and Record Key
+
+![Project ID](./images/project-id.png)
+
+![Record Key](./images/record-key.png)
+
++++
+
+## 
+
+```json
+{
+  "projectId": "<project ID here>"
+}
+```
+
+`npx cypress run --record --key <record key here>`
+
+- Tip: use `npx cypress run --help` if in doubt
+
++++
+
 ## Todo: Record your test runs
 
-- record a test run locally
+- record a test run locally (only run the `cypress/integration/06-ci/*.js` tests)
 - look at the test results at Cypress dashboard
 
 **tip** [https://on.cypress.io/dashboard-faq](https://on.cypress.io/dashboard-faq)
@@ -53,7 +78,7 @@
 
 ## Bonus
 
-- pass record key as an environment variable
+- pass record key as an environment variable (use `npx cypress run --help` if in doubt 🙂)
 - make a test to fail on purpose
 - look at the test failure on the dashboard
 
