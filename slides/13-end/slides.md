@@ -1,9 +1,23 @@
-## 🔖 Workshop lessons
+## 🔖 Workshop lessons Beginner
+
+- Write E2E tests to mimic user's actions
+- Leverage Selector Playground and Cypress Studio to write tests faster
+- Set the initial state before each test
+- Wait for network calls instead
+- Always check the documentation
+- Anything you can do from DevTools console, you can do from your Cypress tests
+
++++
+
+## 🔖 Workshop lessons Intermediate
 
 - Write E2E tests to mimic user's actions
 - Set the initial state before each test
+- Wait for network calls instead
 - Always check the documentation
 - Anything you can do from DevTools console, you can do from your Cypress tests
+- Configure Cypress based on your requirements (reporters, configuration, environment variables)
+- Reusable functions and custom commands to reduce code duplication
 - Use code coverage as a GUIDE
 
 +++
@@ -24,7 +38,7 @@ Thank you for learning E2E testing with [Cypress.io](https://www.cypress.io)
 
 ![Marie feedback](./images/feedback.png)
 
-+++ 
++++
 
 ## Get in touch plus other courses
 
@@ -32,3 +46,4 @@ Thank you for learning E2E testing with [Cypress.io](https://www.cypress.io)
 - [Test automation for Accessibility](https://testautomationu.applitools.com/accessibility-testing-tutorial/)
 - [Intro to Cypress](https://www.ministryoftesting.com/dojo/courses/introduction-to-cypress)
 - [Marie's twitter](https://twitter.com/mcruzdrake)
+- mcruzdrake@gmail.com

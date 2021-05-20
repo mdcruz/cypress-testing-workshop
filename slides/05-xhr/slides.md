@@ -70,7 +70,6 @@ In `05-xhr/spec.js` test "starts with zero items"
 - wait for this XHR alias
   - then check the DOM
 
-
 **tips:** [`cy.intercept`]('https://on.cypress.io/intercept), [Network requests guide](https://on.cypress.io/network-requests)
 
 +++
@@ -117,6 +116,7 @@ it('starts with zero items (fixture)', () => {
   cy.get('li.todo').should('have.length', 0)
 })
 ```
+
 **tip:** use [`cy.fixture`](https://on.cypress.io/fixture) command
 
 +++
@@ -203,6 +203,7 @@ it('shows loading element', () => {
 
 +++
 
-## Let's jump to running our tests on a CI pipeline
+## Let's jump to the next chapter!
 
-Jump to: [06-ci](?p=06-ci)
+- End of Beginner session, Jump to: [13-end](?p=13-end)
+- Running our tests on a CI pipeline, Jump to: [06-ci](?p=06-ci)
