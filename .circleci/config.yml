@@ -167,8 +167,6 @@ jobs:
       - test-answers:
           folder: "05-xhr"
       - test-answers:
-          folder: "06-ci"
-      - test-answers:
           folder: "10-custom-commands"
       - test-answers:
           folder: "11-fixtures"
