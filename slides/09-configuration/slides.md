@@ -18,6 +18,7 @@
 +++
 
 Cypress options can be set via:
+
 - `cypress.json`
 - command line arguments
 - environment variables
@@ -175,7 +176,7 @@ You can change current setting _per spec_ using [Cypress.config](https://on.cypr
 
 ```js
 Cypress.config('baseUrl', 'http://todomvc.com/examples/dojo/')
-beforeEach(function visitSite () {
+beforeEach(function visitSite() {
   cy.log('Visiting', Cypress.config('baseUrl'))
   cy.visit('/')
 })
@@ -200,6 +201,7 @@ Use at your own risk, because the order of mutations and the final config in eac
 ## Todo
 
 Run a single spec in headless mode against:
+
 - `localhost`
 - `http://todomvc.com/examples/dojo/`
 
@@ -219,10 +221,10 @@ Guide [https://on.cypress.io/environment-variables](https://on.cypress.io/enviro
   }
 }
 ```
+
 ```js
 it('has env item', function () {
-  expect(Cypress.env('todoTitle'))
-    .to.equal('env todo')
+  expect(Cypress.env('todoTitle')).to.equal('env todo')
 })
 ```
 
@@ -231,6 +233,7 @@ it('has env item', function () {
 ## Environment variables
 
 ### `cypress.env.json`
+
 You can create your own cypress.env.json file that Cypress will automatically check.
 
 ```json
@@ -255,22 +258,6 @@ See [https://on.cypress.io/env](https://on.cypress.io/env)
 
 +++
 
-## Todo: get deep property
-
-Given `cypress.env.json`
-
-```json
-{
-  "person": {
-    "name": "Joe"
-  }
-}
-```
-
-Assert from the test that name is indeed `Joe`.
-
-+++
-
 ## Environment variables
 
 ### command-line arguments
@@ -280,7 +267,6 @@ npx cypress open --env todoTitle="env todo",life=42
 ```
 
 +++
-
 
 ## Environment variables
 
@@ -362,27 +348,30 @@ Question: Will this be merged with other settings from `cypress.json`?
 [cypress-extends](https://github.com/bahmutov/cypress-extends) is a plugin that adds "extends" support to the configuration file. This allows the config files to remain DRY and avoid duplicating data, but still have multiple files for different scenarios.
 
 cypress.json
+
 ```json
 {
-    "extends": "./base.json",
-    "baseUrl": "localhost:3001"
+  "extends": "./base.json",
+  "baseUrl": "localhost:3001"
 }
 ```
 
 qa.json
+
 ```json
 {
-    "extends": "./base.json",
-    "baseUrl": "https://todomvc.com/examples/react/#/"
+  "extends": "./base.json",
+  "baseUrl": "https://todomvc.com/examples/react/#/"
 }
 ```
+
 +++
 
 ## Summary
 
-+ `--config-file <json filepath>` to load different config files
-+ config (`cypress.json`, command line, env vars, plugin, run-time)
-+ environment variables (`cypress.json`, command line, env vars, plugin, run-time, `cypress.env.json`)
+- `--config-file <json filepath>` to load different config files
+- config (`cypress.json`, command line, env vars, plugin, run-time)
+- environment variables (`cypress.json`, command line, env vars, plugin, run-time, `cypress.env.json`)
 
 +++
 
