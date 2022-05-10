@@ -10,6 +10,7 @@ https://github.com/mdcruz/cypress-testing-workshop
 - Previously, Principal Test Automation Engineer @ News UK
 - [@mcruzdrake](https://twitter.com/mcruzdrake)
 - [mariedrake.com](https://www.mariedrake.com/blog)
+- [Testing With Marie](https://www.youtube.com/channel/UC85SalJXUNhWrrvc1NfWTHQ)
 
 +++
 
@@ -23,7 +24,6 @@ https://github.com/mdcruz/cypress-testing-workshop
 
 ## Structure (Beginner)
 
-- Introduction to Cypress
 - Overview of Todo app
 - Starting a new Cypress project
 - Writing some basic tests
@@ -50,14 +50,6 @@ https://github.com/mdcruz/cypress-testing-workshop
 
 +++
 
-## Time 🕰
-
-- Day 1 (4-5 hours)
-- Day 2 (4-5 hours)
-- With breaks of course!
-
-+++
-
 Please: if you have experience with Cypress.io, help others during the workshop 🙏
 
 +++
@@ -75,10 +67,10 @@ Please: if you have experience with Cypress.io, help others during the workshop 
 You will need:
 
 - `git` to clone this repo
-- Node v12+ to install project dependencies
+- Node v16+ to install project dependencies
 
 ```text
-git clone <repo url>
+git clone https://github.com/mdcruz/cypress-testing-workshop.git
 cd cypress-testing-workshop
 npm install
 ```
@@ -86,16 +78,6 @@ npm install
 +++
 
 ## Let's get started!
-
-+++
-
-## What is Cypress?
-
-+++
-
-![Cypress Architecture](./images/cypress-architecture.png)
-
-Source: [Dominic Elm](https://twitter.com/elmd_)
 
 +++
 

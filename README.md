@@ -6,7 +6,7 @@ An example repo containing a Todo application and exercise files to get started 
 
 - Any computer: Mac, Windows, Linux
 - Text Editor or IDE of choice (preferably [VS Code](https://code.visualstudio.com/download))
-- [Node 12.0.0+ (LTS)](https://nodejs.org/)
+- [Node 16.15.0+ (LTS)](https://nodejs.org/)
 - [git](https://git-scm.com)
 - [CircleCI account](https://circleci.com/)
 
@@ -15,7 +15,7 @@ An example repo containing a Todo application and exercise files to get started 
 In order to get the code and install dependencies
 
 ```bash
-git clone git@github.com:mdcruz/testing-workshop-cypress.git
+git clone https://github.com/mdcruz/cypress-testing-workshop.git
 cd testing-workshop-cypress
 npm install
 ```
@@ -30,7 +30,7 @@ npm install
 ## Starting the Todo Application
 
 ```bash
-cd todomvc
+cd todomvc #if you're not in todomvc folder yet, otherwise ignore this
 npm start
 ```
 
@@ -63,12 +63,14 @@ npm run cy:open
 
 ## Viewing the slides locally
 
-If you want to view the slides locally, open another terminal window and then type
+If you want to view the slides locally, open another terminal window, go to the `cypress-testing-workshop` directory and then type
 
 ```bash
 npm run slides:build
 npm run slides:dev
 ```
+
+To access the slides, navigate to http://localhost:3000
 
 ## Workshop Credits
 
